@@ -1,0 +1,22 @@
+[project]
+name = "devcntnr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Me", email = "ryanh41137@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "argon2-cffi>=25.1.0",
+    "docker>=7.2.0",
+    "loguru>=0.7.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+devcntnr = "devcntnr:main"
+
+[build-system]
+requires = ["uv_build>=0.13.3,<0.14.0"]
+build-backend = "uv_build"
